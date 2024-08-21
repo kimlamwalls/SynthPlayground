@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>A3 Testing</title>
+    <link href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<svg class="wave-container" xmlns="http://www.w3.org/2000/svg"></svg>
+<!-- container for background waveform animation -->
+<header class="side-nav-bar">
+    <nav class="side-nav">
+        <!--logo-->
+        <a href="index.html">
+            <img alt="Logo" class="side-logo" src="images/logo.svg">
+        </a>
+        <!--links-->
+        <ul class="nav-links">
+            <!--set link as active by default when on workshop page-->
+            <li><a class="side-nav-link" id="introduction-link">Introduction</a></li>
+            <li><a class="side-nav-link" id="oscillator-link">Oscillator</a></li>
+            <li><a class="side-nav-link" id="filter-link">Filter</a></li>
+            <li><a class="back-to-home" href="index.html">Back to Home</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<nav class="mobile-back-to-home" >
+    <a href="index.html">
+        <svg class="back-arrow" fill="#FF7137" height="13" viewBox="0 0 10 13" width="12"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.50024 1.1355C6.22397 0.859227 5.77603 0.859227 5.49976 1.1355L0.997596 5.63767C0.72132 5.91394 0.72132 6.36187 0.997596 6.63815C1.27387 6.91442 1.7218 6.91442 1.99808 6.63815L6 2.63622L10.0019 6.63815C10.2782 6.91442 10.7261 6.91442 11.0024 6.63815C11.2787 6.36187 11.2787 5.91394 11.0024 5.63767L6.50024 1.1355ZM5.29255 12.2474C5.29255 12.6382 5.60929 12.9549 6 12.9549C6.39071 12.9549 6.70745 12.6382 6.70745 12.2474H5.29255ZM5.29255 1.63574L5.29255 12.2474H6.70745L6.70745 1.63574H5.29255Z"
+                  fill=""></path>
+        </svg>
+    </a>
+</nav>
+
+<div class="workshop-content">
+    <div class="modules-container">
+        <div class="module" id="info-module">
+            <h2 id="module-info-heading"></h2>
+            <p class="module-text" id="module-text">
+            </p>
+            <button class="workshop-button" id="previous-module-button">
+                <svg class="previous-arrow" fill="#FF7137" height="13" viewBox="0 0 10 13" width="12"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.50024 1.1355C6.22397 0.859227 5.77603 0.859227 5.49976 1.1355L0.997596 5.63767C0.72132 5.91394 0.72132 6.36187 0.997596 6.63815C1.27387 6.91442 1.7218 6.91442 1.99808 6.63815L6 2.63622L10.0019 6.63815C10.2782 6.91442 10.7261 6.91442 11.0024 6.63815C11.2787 6.36187 11.2787 5.91394 11.0024 5.63767L6.50024 1.1355ZM5.29255 12.2474C5.29255 12.6382 5.60929 12.9549 6 12.9549C6.39071 12.9549 6.70745 12.6382 6.70745 12.2474H5.29255ZM5.29255 1.63574L5.29255 12.2474H6.70745L6.70745 1.63574H5.29255Z"
+                          fill=""/>
+                </svg>
+                Previous
+            </button>
+            <!--button that runs script for next module-->
+            <button class="workshop-button" id="next-module-button">Next
+                <svg class="next-arrow" fill="#FF7137" height="13" viewBox="0 0 10 13" width="12"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.50024 1.1355C6.22397 0.859227 5.77603 0.859227 5.49976 1.1355L0.997596 5.63767C0.72132 5.91394 0.72132 6.36187 0.997596 6.63815C1.27387 6.91442 1.7218 6.91442 1.99808 6.63815L6 2.63622L10.0019 6.63815C10.2782 6.91442 10.7261 6.91442 11.0024 6.63815C11.2787 6.36187 11.2787 5.91394 11.0024 5.63767L6.50024 1.1355ZM5.29255 12.2474C5.29255 12.6382 5.60929 12.9549 6 12.9549C6.39071 12.9549 6.70745 12.6382 6.70745 12.2474H5.29255ZM5.29255 1.63574L5.29255 12.2474H6.70745L6.70745 1.63574H5.29255Z"
+                          fill=""/>
+                </svg>
+            </button>
+
+        </div>
+        <div class="module" id="interactive-module">
+            <h2 id="interactive-module-heading">Interact!</h2>
+            <div id="interactive-module-content"></div>
+        </div>
+    </div>
+</div>
+<script src="audioEngine.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"
+        type="module"></script>
+<script src="workshop.js"></script>
+</body>
+</html>

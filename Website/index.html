@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>A3 Testing</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" rel="stylesheet">
+</head>
+<body>
+<svg class="wave-container" xmlns="http://www.w3.org/2000/svg"></svg>
+<!-- container for background waveform animation -->
+
+<header class="header-bar">
+
+    <div class="logo-container">
+        <a href="index.html">
+            <img alt="Logo" class="logo" src="images/logo.svg">
+        </a>
+    </div>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#events">Events</a></li>
+            <li><a class="nav-link" href="workshop.html">Synth Basics</a></li>
+        </ul>
+        <a class="nav-contact-button" href="javascript:location.href='mailto:' + ['test', 'gmail.com'].join('@')">Contact
+            Us</a>
+    </nav>
+    <a class="mobile-nav-button">
+        <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" ><path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"/></svg>            <path xmlns="http://www.w3.org/2000/svg" d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"/>        </svg>
+    </a>
+</header>
+<div class="mobile-nav">
+    <li><a class="nav-link" href="#about">About</a></li>
+    <li><a class="nav-link" href="#events">Events</a></li>
+    <li><a class="nav-link" href="workshop.html">Synth Basics</a></li>
+    <li><a class="nav-contact-button" href="javascript:location.href='mailto:' + ['test', 'gmail.com'].join('@')">Contact
+        Us</a></li>
+</div>
+
+<div class="main-content">
+    <!--========================WELCOME==========================-->
+    <div class="welcome-container">
+        <h1>Learn<br>Synthesizers.</h1>
+        <a class="get-started-button" href="workshop.html">Get Started</a>
+        <p class="welcome-text">A free interactive guide<br>through the basics of how<br>synthesizers work.</p>
+    </div>
+
+    <!--=========================ABOUT===========================-->
+    <div class="section-container" id="about">
+        <div class="section-content-container">
+            <h2>What is SynthLab?</h2>
+            <h3>Who are we?</h3>
+            <div class="section-p-container">
+                <p>SynthLab are a collective not for profit group of musicians and music enthusiasts based in Melbourne,
+                    Australia. Who aspires to share knowledge with like-minded individuals.</p>
+            </div>
+            <h3>What do we do?</h3>
+            <div class="section-p-container">
+                <p>We run a range of classes and programs that teach people how to use synthesizers and other musical
+                    equipment
+                    in order for them to unleash their musical creativity!
+                    <br>
+                    We also offer free online educational resources and tools for people to get a taste of working with
+                    electronic
+                    synthesizers</p>
+            </div>
+        </div>
+        <sl-carousel class="aspect-ratio image-carousel" navigation pagination>
+            <sl-carousel-item>
+                <img
+                        alt="Behringer poly d Synth - source unsplash"
+                        src="images/2.jpg"
+                />
+            </sl-carousel-item>
+            <sl-carousel-item>
+                <img
+                        alt="headphones on a keyboard - source unsplash"
+                        src="images/1.jpg"
+                />
+            </sl-carousel-item>
+            <sl-carousel-item>
+                <img
+                        alt="Moog synthesizers - source unsplash"
+                        src="images/3.jpg"
+                />
+            </sl-carousel-item>
+            <sl-carousel-item>
+                <img
+                        alt="Modular synthesizers - source unsplash"
+                        src="images/4.jpg"
+                />
+            </sl-carousel-item>
+        </sl-carousel>
+
+        <sl-divider></sl-divider>
+    </div>
+    <!--============================EVENTS===============================-->
+    <div class="section-container" id="events">
+        <div class="events-big-container">
+            <div class="events-cards-container">
+                <h2>Upcoming Events</h2>
+                <div class="event-card-short corner active" id="event-card-1">
+                    <h3>Come and try evening</h3>
+                    <h4>Jan 15</h4>
+                </div>
+                <div class="event-card-short corner" id="event-card-2">
+                    <h3>Suzanne Ciani - In Conversation</h3>
+                    <h4>Feb 3</h4>
+                </div>
+                <div class="event-card-short corner" id="event-card-3">
+                    <h3>Intermediate Class</h3>
+                    <h4>Feb 9</h4>
+                </div>
+            </div>
+            <div class="event-details-container">
+                <h3 id="event-details-title">Come and try evening</h3>
+                <h4 id="event-details-date">January 15</h4>
+                <p id="event-description">Please join us for a beginner-friendly hands on session, we will have a
+                    collection of our staff and volunteers present, happy to give guidance and answer any questions you
+                    have. The focus will be on having fun and experimenting.
+                    Come and play with our catalogue of synthesizers!</p>
+                <a class="event-card-button" href="#">Register</a>
+            </div>
+        </div>
+    </div>
+    <!--============================SECOND WELCOME===============================-->
+    <div class="welcome-container">
+        <h1>Learn Synthesizers<br>Now</h1>
+        <a class="get-started-button" href="workshop.html">Get Started</a>
+        <p class="welcome-text">A free interactive guide<br>through the basics of how<br>synthesizers work.</p>
+    </div>
+</div>
+<footer class="footer-container">
+    <div class="logo-container">
+        <a href="index.html">
+            <img alt="Logo" class="logo" src="images/logo.svg">
+        </a>
+    </div>
+    <div class="subscribe-container">
+        <h3 class="subscribe-text">Subscribe to our newsletter</h3>
+        <form action="#" class="subscribe-form" method="POST">
+            <input name="email" placeholder="Your email address" type="email">
+            <button class="subscribe-arrow-button" type="submit">
+                <svg class="subscribe-arrow rotate-90" fill="black" height="13" viewBox="0 0 12 13" width="12"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.50024 1.1355C6.22397 0.859227 5.77603 0.859227 5.49976 1.1355L0.997596 5.63767C0.72132 5.91394 0.72132 6.36187 0.997596 6.63815C1.27387 6.91442 1.7218 6.91442 1.99808 6.63815L6 2.63622L10.0019 6.63815C10.2782 6.91442 10.7261 6.91442 11.0024 6.63815C11.2787 6.36187 11.2787 5.91394 11.0024 5.63767L6.50024 1.1355ZM5.29255 12.2474C5.29255 12.6382 5.60929 12.9549 6 12.9549C6.39071 12.9549 6.70745 12.6382 6.70745 12.2474H5.29255ZM5.29255 1.63574L5.29255 12.2474H6.70745L6.70745 1.63574H5.29255Z"
+                          fill=""/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</footer>
+
+
+<!-- Back to top button -->
+<button class="always-on-top" id="back-to-top-button" onclick="scrollToTop()">
+    <img alt="Back to top" src="images/up-arrow.svg">
+    <h3>Back to Top</h3>
+</button>
+
+<!-- Scroll down button -->
+<button class="always-on-top center-horizontally" id="scroll-down-button" onclick="scrollToSection('about')">
+    <img alt="Scroll down" src="images/up-arrow.svg">
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"
+        type="module"></script>
+<script src="waveBackgroundGenerator.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+
+<script src="main.js"></script>
+</body>
+</html>
