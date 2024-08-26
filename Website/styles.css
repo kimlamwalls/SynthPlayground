@@ -434,8 +434,27 @@ label {
     padding: 0;
     background-color: var(--nav-color);
     margin-bottom: 0;
-    height: 15vh;
+    height: 8rem;
     width: 100%;
+    position: relative;
+}
+
+.copyright-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    bottom: 2rem;
+    right: 15rem;
+}
+
+.copyright-link {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark);
+    text-decoration: none;
+    justify-content: left;
 }
 
 /*Subscribe container*/
@@ -503,8 +522,8 @@ label {
     display: flex;
     align-items: center;
     align-content: center;
-    bottom: 20px;
-    right: 30px;
+    bottom: 2rem;
+    right: 2.5rem;
     z-index: 10; /* display above other content */
     border: none;
     outline: none;
@@ -517,7 +536,7 @@ label {
     font-size: 1.2em;
     opacity: 0; /* Initially transparent */
     transition: opacity 0.3s ease-in-out;
-    pointer-events: none; /* Make unclickable initially */
+    pointer-events: none; /* Make un-clickable initially */
 }
 
 #back-to-top-button:hover {
@@ -770,7 +789,6 @@ label {
 #volume-control {
     font-size: 1.2rem;
     --track-color-active: var(--sl-color-primary-600);
-    --track-color-inactive: var(--sl-color-primary-100);
 }
 
 #pitch-slider {
